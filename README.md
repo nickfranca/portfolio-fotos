@@ -1,4 +1,4 @@
-````markdown
+
 # 📸 Portfólio Fotográfico — Laravel
 
 Portfólio fotográfico moderno desenvolvido em **Laravel**, com **modo escuro permanente**, foco total nas imagens e uma identidade visual **branca + vermelha**.  
@@ -28,7 +28,7 @@ O objetivo do projeto é permitir que um fotógrafo publique e organize suas fot
 
 ---
 
-````markdown
+
 ## ▶️ Como rodar o projeto (com Docker)
 
 Este projeto utiliza **Docker e Docker Compose** para padronizar o ambiente de desenvolvimento com Laravel.
@@ -50,7 +50,6 @@ Copie o arquivo de ambiente:
 cp .env.example .env
 ```
 
-> Ajuste as variáveis conforme necessário (banco de dados, portas, etc).
 
 ---
 
@@ -106,12 +105,3 @@ Projeto para apresentação de fotografia em ambiente web moderno.
 ```
 
 ---
-
-Se quiser, no próximo passo eu posso:
-- Ajustar o README para **Docker**
-- Criar uma seção de **prints**
-- Adaptar para **deploy**
-- Escrever um **README mais comercial** (para cliente)
-
-É só dizer.
-```
