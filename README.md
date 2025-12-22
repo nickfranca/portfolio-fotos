@@ -101,7 +101,3 @@ http://localhost:9001
 
 Desenvolvido por **Nicole**
 Projeto para apresentação de fotografia em ambiente web moderno.
-
-```
-
----
