@@ -1,79 +1,117 @@
+````markdown
+# 📸 Portfólio Fotográfico — Laravel
 
-# Setup Docker Para Projetos Laravel (8, 9, 10, 11 ou 12)
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+Portfólio fotográfico moderno desenvolvido em **Laravel**, com **modo escuro permanente**, foco total nas imagens e uma identidade visual **branca + vermelha**.  
+O objetivo do projeto é permitir que um fotógrafo publique e organize suas fotos de forma simples, elegante e profissional.
 
-### Passo a passo
-Clone Repositório
-```sh
-git clone https://github.com/especializati/setup-docker-laravel.git
-```
+---
 
-Clone os Arquivos do Laravel
-```sh
-git clone https://github.com/laravel/laravel.git app-laravel
-```
+## ✨ Características
 
+- 🌙 Modo escuro fixo (dark-first)
+- 🖤 Paleta preta com branco como destaque
+- 📐 Galeria com proporção fixa (layout limpo e alinhado)
+- 🖼️ Imagens como protagonistas (UI mínima)
+- ⚡ Frontend com Tailwind CSS + Laravel
+- 🧩 Estrutura Blade simples e escalável
+- 🚀 Preparado para painel admin de upload
 
-Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
-```sh
-cp -rf setup-docker-laravel/* app-laravel/
-```
-```sh
-cd app-laravel/
-```
+---
 
+## 🛠️ Tecnologias
 
-Crie o Arquivo .env
-```sh
+- **PHP 8+**
+- **Laravel**
+- **Blade**
+- **Tailwind CSS**
+- **Docker**
+
+---
+
+````markdown
+## ▶️ Como rodar o projeto (com Docker)
+
+Este projeto utiliza **Docker e Docker Compose** para padronizar o ambiente de desenvolvimento com Laravel.
+
+### 1️⃣ Clonar o repositório
+
+```bash
+git clone <url-do-repositorio> portfolio
+cd portfolio
+````
+
+---
+
+### 2️⃣ Configurar variáveis de ambiente
+
+Copie o arquivo de ambiente:
+
+```bash
 cp .env.example .env
 ```
 
+> Ajuste as variáveis conforme necessário (banco de dados, portas, etc).
 
-Atualize **APENAS** essas variáveis de ambiente do arquivo .env (as demais devem permanecer como estão)
-```dosini
-APP_NAME="Especializa Ti"
-APP_URL=http://localhost:8989
+---
 
-DB_CONNECTION=mysql
-DB_HOST=db
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=root
+### 3️⃣ Subir os containers
 
-CACHE_DRIVER=redis
-QUEUE_CONNECTION=redis
-SESSION_DRIVER=redis
-
-REDIS_HOST=redis
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-```
-
-
-Suba os containers do projeto
-```sh
+```bash
 docker compose up -d
 ```
 
+---
 
-Acessar o container
-```sh
+### 4️⃣ Instalar dependências PHP dentro do container
+
+```bash
 docker compose exec app bash
-```
-
-
-Instalar as dependências do projeto
-```sh
 composer install
 ```
 
+---
 
-Gerar a key do projeto Laravel
-```sh
+### 5️⃣ Gerar a chave da aplicação dentro do container
+
+```bash
 php artisan key:generate
 ```
 
+---
 
-Acessar o projeto
-[http://localhost:8989](http://localhost:8989)
+### 6️⃣ Executar as migrações dentro do container (se aplicável)
+
+```bash
+php artisan migrate
+```
+
+---
+
+### 7️⃣ Acessar o projeto
+
+A aplicação estará disponível em:
+
+```
+http://localhost:9001
+```
+
+---
+
+
+## 👤 Autor
+
+Desenvolvido por **Nicole**
+Projeto para apresentação de fotografia em ambiente web moderno.
+
+```
+
+---
+
+Se quiser, no próximo passo eu posso:
+- Ajustar o README para **Docker**
+- Criar uma seção de **prints**
+- Adaptar para **deploy**
+- Escrever um **README mais comercial** (para cliente)
+
+É só dizer.
+```
