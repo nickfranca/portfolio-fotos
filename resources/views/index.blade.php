@@ -134,7 +134,7 @@
                     <a href="https://i.pinimg.com/originals/fa/61/92/fa6192ef1935fde727ae094ce6ec71bc.gif" target="_blank" class="hover:text-white">EMAIL</a>
                 </div>
                 <p class="text-[10px] text-neutral-600 tracking-widest uppercase">
-                    © 2025 All rights reserved.<br>Designed based on Print Aesthetics.
+                    © 2025 Todos os direitos reservados.<br>feito por Nick França.
                 </p>
             </div>
         </div>
