@@ -6,17 +6,12 @@
 
         <title>{{ config('app.name', 'Portfólio Editorial') }}</title>
 
-        {{-- 1. Importação de Fontes Otimizada (Cinzel, Inter, Playfair) --}}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-        {{-- 2. Tailwind CSS via CDN --}}
-        {{-- IMPORTANTE: Isso garante que o design funcione instantaneamente. --}}
-        {{-- Em produção, o ideal é usar o @vite, mas para visualizar agora, isso é perfeito. --}}
         <script src="https://cdn.tailwindcss.com"></script>
-        
-        {{-- Configuração do Tailwind para as Fontes e Cores --}}
+
         <script>
             tailwind.config = {
                 theme: {
@@ -35,16 +30,14 @@
             }
         </script>
 
-        {{-- 3. Estilos Globais e Animações --}}
         <style>
             body {
                 font-family: 'Inter', sans-serif;
                 background-color: #f5f5f5; /* Começa neutro, o conteúdo define o resto */
                 color: #0b0b0b;
-                overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+                overflow-x: hidden;
             }
 
-            /* Barras de rolagem personalizadas (Estilo Minimalista) */
             ::-webkit-scrollbar {
                 width: 8px;
             }
@@ -65,7 +58,6 @@
             .delay-300 { animation-delay: 0.3s; }
         </style>
 
-        {{-- Mantendo seu suporte ao Vite caso queira usar depois --}}
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @endif
