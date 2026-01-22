@@ -2,9 +2,6 @@
 
 @section('content')
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 <div class="bg-neutral-100 text-neutral-900 font-sans selection:bg-black selection:text-white overflow-x-hidden">
 
@@ -36,6 +33,51 @@
             </div>
         </div>
     </section>
+    
+
+    <section class="min-h-screen py-20 px-6 md:px-20 bg-white">
+        
+        <div class="flex justify-between items-end mb-16 border-b border-black/10 pb-6">
+            <h2 class="text-4xl font-serif text-black">Nossos Trabalhos</h2>
+            <span class="text-xs font-mono uppercase tracking-widest hidden md:block">Index / 02 - 16</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 auto-rows-[300px]">
+            <div class="col-span-1 md:col-span-6 row-span-2 bg-neutral-50 p-8 flex flex-col justify-between group hover:bg-neutral-100 transition-colors">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest border-b border-black pb-1">Project 01</span>
+                    <h3 class="text-3xl font-serif mt-4 mb-2">Nature Shadows</h3>
+                    <p class="text-sm text-neutral-500 max-w-xs">Registros das obras da Natureza.</p>
+                </div>
+                <div class="h-64 overflow-hidden mt-6 relative">
+                    <img src="https://s2-g1.glbimg.com/c1tS_axTjV_qDkmMeMs3wYZCgGY=/0x0:5472x3648/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/H/v/pTatikTlSIWRuTzd0JwA/j9a6180.jpg" class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300" class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+            <div class="col-span-1 md:col-span-6 row-span-2 grid grid-cols-2 gap-4">
+                
+                <div class="bg-gray-200 overflow-hidden relative group">
+                    <img src="https://kikacastro.com.br/wp-content/uploads/2022/08/under-16-winner-800x496-1.jpg" class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300">
+                    <span class="absolute top-2 left-2 text-[10px] bg-white px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">01</span>
+                </div>
+                
+                <div class="bg-gray-200 overflow-hidden relative group">
+                    <img src="https://s2.glbimg.com/Sdia9HsRP4V_FCb874if-ml_4is=/620x520/e.glbimg.com/og/ed/f/original/2020/08/11/31669212-8603391-a_king_eidar_duck_bathing_in_some_shallow_water-a-28_1596787696775.jpg" class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300">
+                     <span class="absolute top-2 left-2 text-[10px] bg-white px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">02</span>
+                </div>
+                
+                <div class="bg-gray-200 overflow-hidden relative group">
+                    <img src="https://mediatalks.uol.com.br/wp-content/uploads/2023/12/Sapo-flores-Wikicommons-fotografia-de-natureza-e1673630178143.jpg">
+                     <span class="absolute top-2 left-2 text-[10px] bg-white px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">03</span>
+                </div>
+
+                <div class="bg-black text-white p-6 flex flex-col justify-center items-center text-center">
+                    <p class="font-serif italic text-lg">"A fotografia é a história que não consigo expressar em palavras."</p>
+                    <span class="text-[10px] uppercase mt-4 tracking-widest">— Destin Sparks</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="min-h-screen flex flex-col md:flex-row">
 
         <div class="w-full md:w-1/2 bg-black text-white p-12 md:p-24 flex flex-col justify-between relative overflow-hidden">
@@ -63,7 +105,7 @@
         <div class="w-full md:w-1/2 bg-neutral-100 p-8 md:p-12 flex items-center justify-center relative">
             <div class="w-full h-[80%] bg-white shadow-2xl overflow-hidden relative group">
                 <img 
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" 
+                    src="https://conafer.org.br/wp-content/uploads/2024/10/image2-4.png" 
                     alt="Intro Portrait"
                     class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
                 >
@@ -75,49 +117,110 @@
         </div>
     </section>
 
-    <section class="min-h-screen py-20 px-6 md:px-20 bg-white">
+<section class="min-h-screen py-24 px-6 md:px-20 bg-stone-50">
+    
+    <div class="text-center max-w-2xl mx-auto mb-20">
+        <span class="text-xs font-mono text-stone-500 uppercase tracking-[0.3em] mb-4 block">Journal & Insights</span>
+        <h2 class="text-5xl md:text-6xl font-serif text-stone-900 mb-6">Blog da Nick</h2>
+        <div class="w-12 h-1 bg-black mx-auto"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto flex flex-col gap-16">
         
-        <div class="flex justify-between items-end mb-16 border-b border-black/10 pb-6">
-            <h2 class="text-4xl font-serif text-black">Nossos Trabalhos</h2>
-            <span class="text-xs font-mono uppercase tracking-widest hidden md:block">Index / 02 - 16</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 auto-rows-[300px]">
-            <div class="col-span-1 md:col-span-6 row-span-2 bg-neutral-50 p-8 flex flex-col justify-between group hover:bg-neutral-100 transition-colors">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest border-b border-black pb-1">Project 01</span>
-                    <h3 class="text-3xl font-serif mt-4 mb-2">Urban Shadows</h3>
-                    <p class="text-sm text-neutral-500 max-w-xs">Exploração geométrica das cidades modernas e a solidão em meio à multidão.</p>
+        <article class="group grid grid-cols-1 md:grid-cols-12 gap-8 items-center cursor-pointer">
+            <div class="md:col-span-7 relative overflow-hidden rounded-sm">
+                <img 
+                    src="https://burst.shopifycdn.com/photos/beach-sunset-thailand.jpg?width=1000&format=pjpg&exif=0&iptc=0" 
+                    class="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
+                    alt="Pôr do sol na Tailândia"
+                >
+            </div>
+            
+            <div class="md:col-span-5 flex flex-col gap-4 md:pl-4">
+                <div class="flex items-center gap-3 text-xs font-mono text-stone-500 uppercase tracking-wider">
+                    <span class="text-black font-bold border-b border-black/20 pb-0.5">Viagem</span>
+                    <span>&bull;</span>
+                    <span>22 Jan 2026</span>
                 </div>
-                <div class="h-64 overflow-hidden mt-6 relative">
-                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-700">
+                
+                <h3 class="text-3xl md:text-4xl font-serif text-stone-900 leading-tight group-hover:text-stone-600 transition-colors">
+                    O silêncio dourado das praias ao entardecer
+                </h3>
+                
+                <p class="text-stone-600 font-light leading-relaxed text-sm md:text-base line-clamp-3">
+                    Aqui é onde o cliente escreve sobre o ambiente. A luz estava perfeita e não havia ninguém por perto. É impressionante como a natureza muda de cor em questão de minutos...
+                </p>
+                
+                <div class="pt-4">
+                    <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest border-b-2 border-transparent group-hover:border-black transition-all pb-1">
+                        Ler Artigo <span class="text-lg leading-none">&rarr;</span>
+                    </span>
                 </div>
             </div>
-            <div class="col-span-1 md:col-span-6 row-span-2 grid grid-cols-2 gap-4">
-                
-                <div class="bg-gray-200 overflow-hidden relative group">
-                    <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300">
-                    <span class="absolute top-2 left-2 text-[10px] bg-white px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">01</span>
-                </div>
-                
-                <div class="bg-gray-200 overflow-hidden relative group">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300">
-                     <span class="absolute top-2 left-2 text-[10px] bg-white px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">02</span>
-                </div>
-                
-                <div class="bg-gray-200 overflow-hidden relative group">
-                    <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300">
-                     <span class="absolute top-2 left-2 text-[10px] bg-white px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">03</span>
-                </div>
+        </article>
 
-                <div class="bg-black text-white p-6 flex flex-col justify-center items-center text-center">
-                    <p class="font-serif italic text-lg">"A fotografia é a história que não consigo expressar em palavras."</p>
-                    <span class="text-[10px] uppercase mt-4 tracking-widest">— Destin Sparks</span>
+        <hr class="border-stone-200">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
+            
+            <article class="flex flex-col group cursor-pointer">
+                <div class="overflow-hidden mb-5 rounded-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1630770175431-97430a3bd6e3?fm=jpg&q=60&w=3000&auto=format&fit=crop" 
+                        class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+                    >
                 </div>
-            </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-stone-500">Natureza &bull; 5 min</span>
+                    <h4 class="text-xl font-serif text-stone-900 leading-snug group-hover:underline decoration-stone-300 underline-offset-4">Águas Cristalinas</h4>
+                    <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed">
+                        Um comentário rápido sobre a temperatura da água e a sensação de mergulhar neste paraíso escondido.
+                    </p>
+                </div>
+            </article>
+
+            <article class="flex flex-col group cursor-pointer">
+                <div class="overflow-hidden mb-5 rounded-sm">
+                    <img 
+                        src="https://cdn.pixabay.com/photo/2017/01/12/08/15/animal-1974025_1280.jpg" 
+                        class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+                    >
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-stone-500">Fauna &bull; 3 min</span>
+                    <h4 class="text-xl font-serif text-stone-900 leading-snug group-hover:underline decoration-stone-300 underline-offset-4">Encontros Selvagens</h4>
+                    <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed">
+                         A sorte de encontrar este animal em seu habitat natural foi indescritível, um momento único.
+                    </p>
+                </div>
+            </article>
+
+            <article class="flex flex-col group cursor-pointer">
+                <div class="overflow-hidden mb-5 rounded-sm">
+                    <img 
+                        src="https://ciclovivo.com.br/wp-content/uploads/2015/009/img/noticias/7475598318_b2084ba4ba_z.jpg" 
+                        class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+                    >
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-stone-500">Urbano &bull; 7 min</span>
+                    <h4 class="text-xl font-serif text-stone-900 leading-snug group-hover:underline decoration-stone-300 underline-offset-4">Caminhos de Bike</h4>
+                    <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed">
+                         Um passeio pela ciclovia no fim da tarde revelou ângulos completamente novos da cidade.
+                    </p>
+                </div>
+            </article>
 
         </div>
-    </section>
+        
+        <div class="text-center mt-8">
+            <button class="px-8 py-3 border border-stone-300 hover:bg-black hover:text-white hover:border-black transition-colors uppercase text-xs tracking-widest font-bold">
+                Carregar Mais Posts
+            </button>
+        </div>
 
+    </div>
+</section>
     <footer class="bg-black text-white py-20 px-8 md:px-20 border-t border-white/10">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end">
             <div>
