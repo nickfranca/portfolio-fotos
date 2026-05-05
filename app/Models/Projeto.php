@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Projeto extends Model
 {
@@ -19,7 +20,15 @@ class Projeto extends Model
         'titulo',
         'descricao',
         'imagem',
+        'ordem',
+        'ativo',
         'destaque',
+    ];
+
+    protected $casts = [
+        'ativo' => 'boolean',
+        'destaque' => 'boolean',
+        'ordem' => 'integer',
     ];
 
 
@@ -27,5 +36,9 @@ class Projeto extends Model
     {
         return $this->belongsTo(User::class, 'usuario_id');
     }
-}
 
+    public function fotos(): HasMany
+    {
+        return $this->hasMany(Foto::class, 'projeto_id')->orderBy('ordem');
+    }
+}

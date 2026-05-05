@@ -12,8 +12,17 @@ class Configuracao extends Model
     protected $table = 'configuracaos';
 
     protected $fillable = [
-        'id',
         'chave',
         'valor'
     ];
+
+    public static function mapa(): array
+    {
+        return static::pluck('valor', 'chave')->all();
+    }
+
+    public static function valor(string $chave, ?string $padrao = null): ?string
+    {
+        return static::where('chave', $chave)->value('valor') ?? $padrao;
+    }
 }

@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('fotos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('projeto_id')->nullable()->constrained('projetos')->nullOnDelete();
+            $table->string("titulo")->nullable();
+            $table->text("descricao")->nullable();
             $table->string("caminho");
-            $table->string("ordem");
-            $table->string("ativo");
+            $table->unsignedInteger("ordem")->default(0);
+            $table->boolean("ativo")->default(true);
             $table->timestamps();
         });
     }

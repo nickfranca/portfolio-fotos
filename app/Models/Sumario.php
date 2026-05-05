@@ -12,10 +12,13 @@ class Sumario extends Model
     protected $table = 'sumarios';
 
     protected $fillable = [
-        'id',
         'numero_ordem',
         'titulo',
         'pagina',
         'ordem'
+    ];
+
+    protected $casts = [
+        'ordem' => 'integer',
     ];
 }

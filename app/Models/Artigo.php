@@ -24,6 +24,10 @@ class Artigo extends Model
         'destaque'
     ];
 
+    protected $casts = [
+        'destaque' => 'boolean',
+    ];
+
 
     public function user(): BelongsTo
     {

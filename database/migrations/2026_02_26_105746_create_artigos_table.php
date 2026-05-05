@@ -16,12 +16,12 @@ return new class extends Migration
             $table->foreignId('usuario_id')->constrained('users')->onDelete('cascade');
             $table->string("slug");
             $table->string("titulo");
-            $table->string("categoria");
-            $table->string("resumo");
-            $table->string("conteudo");
-            $table->string("imagem_capa");
-            $table->string("tempo_leitura");
-            $table->string("destaque");
+            $table->string("categoria")->nullable();
+            $table->text("resumo")->nullable();
+            $table->longText("conteudo");
+            $table->string("imagem_capa")->nullable();
+            $table->string("tempo_leitura")->nullable();
+            $table->boolean("destaque")->default(false);
             $table->timestamps();
         });
     }

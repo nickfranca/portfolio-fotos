@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('projetos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('usuario_id')->constrained('users')->onDelete('cascade');
-            $table->string("tag");
+            $table->string("tag")->nullable();
             $table->string("titulo");
-            $table->string("descricao");
-            $table->string("imagem");
-            $table->string("destaque");
+            $table->text("descricao")->nullable();
+            $table->string("imagem")->nullable();
+            $table->unsignedInteger("ordem")->default(0);
+            $table->boolean("ativo")->default(true);
+            $table->boolean("destaque")->default(false);
             $table->timestamps();
         });
     }
