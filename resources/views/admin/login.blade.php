@@ -41,7 +41,7 @@
 
                 <div class="group relative">
                     <input 
-                        type="login" 
+                        type="text" 
                         name="login" 
                         id="login" 
                         required 

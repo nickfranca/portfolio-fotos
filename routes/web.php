@@ -18,7 +18,7 @@ Route::get('/blog', [ArtigoController::class, 'index'])->name('blog.index');
 Route::get('/blog/{artigo:slug}', [ArtigoController::class, 'show'])->name('blog.show');
 
 Route::get('/login', [ControllerAdmin::class, 'login_admin'])->name('login');
-Route::post('loginAdm', [UserController::class, 'login'])->name('login.post');
+Route::post('adm/login', [UserController::class, 'login'])->name('login.post');
 Route::post('logout', [UserController::class, 'logout'])->name('logout');
 Route::get('/midia/fotos/{foto}', [MediaController::class, 'foto'])->name('media.fotos.show');
 Route::get('/midia/fotos/{foto}/download', [MediaController::class, 'downloadFoto'])->name('media.fotos.download');
